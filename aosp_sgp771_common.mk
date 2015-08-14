@@ -56,4 +56,4 @@ PRODUCT_CHARACTERISTICS := tablet
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320 \
-    ro.usb.pid_suffix=1BA
+    ro.usb.pid_suffix=1CF
