@@ -49,8 +49,8 @@ PRODUCT_COPY_FILES += \
     device/sony/karin/rootdir/system/vendor/etc/touch_fusion_panel_id_0x071F.cfg:system/vendor/etc/touch_fusion_panel_id_0x071F.cfg
 
 PRODUCT_AAPT_CONFIG := large
-PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_CHARACTERISTICS := tablet
 
