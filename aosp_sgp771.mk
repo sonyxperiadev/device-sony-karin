@@ -17,6 +17,10 @@ TARGET_KERNEL_CONFIG := aosp_kitakami_karin_defconfig
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 $(call inherit-product, device/sony/karin/aosp_sgp771_common.mk)
 
+# NFC config
+PRODUCT_PACKAGES += nfc_nci.karin
+ADDITIONAL_DEFAULT_PROPERTIES += ro.hardware.nfc_nci=karin
+
 PRODUCT_NAME := aosp_sgp771
 PRODUCT_DEVICE := karin
 PRODUCT_MODEL := Xperia Z4 Tablet (AOSP)
