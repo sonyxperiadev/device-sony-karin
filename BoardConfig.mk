@@ -17,4 +17,6 @@ include device/sony/common/CommonConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := SGP771
 
+BOARD_KERNEL_CMDLINE += androidboot.hardware=karin
+
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/maxim_sti/gesture_wakeup"
