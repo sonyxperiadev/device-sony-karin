@@ -32,13 +32,18 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>10</item>
-        <item>30</item>
-        <item>60</item>
-        <item>100</item>
-        <item>150</item>
-        <item>210</item>
-        <item>255</item>
+        <item>64</item>
+        <item>128</item>
+        <item>170</item>
+        <item>220</item>
+        <item>256</item>
+        <item>384</item>
+        <item>512</item>
+        <item>768</item>
+        <item>1024</item>
+        <item>1536</item>
+        <item>2048</item>
+        <item>4096</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -46,14 +51,19 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>10</item>
-        <item>20</item>
-        <item>40</item>
-        <item>70</item>
-        <item>110</item>
-        <item>160</item>
-        <item>200</item>
-        <item>255</item>
+        <item>10</item>   <!--    0 -->
+        <item>32</item>   <!--   64 -->
+        <item>64</item>   <!--  128 -->
+        <item>80</item>   <!--  170 -->
+        <item>96</item>   <!--  220 -->
+        <item>112</item>  <!--  256 -->
+        <item>128</item>  <!--  384 -->
+        <item>144</item>  <!--  512 -->
+        <item>176</item>  <!--  768 -->
+        <item>196</item>  <!-- 1024 -->
+        <item>208</item>  <!-- 1536 -->
+        <item>224</item>  <!-- 2048 -->
+        <item>255</item>  <!-- 4096 -->
     </integer-array>
 
     <!-- Minimum screen brightness setting allowed by the power manager.
@@ -63,7 +73,7 @@
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDoze">1</integer>
+    <integer name="config_screenBrightnessDoze">5</integer>
 
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
@@ -77,7 +87,7 @@
          some range of adjustment to dim the screen further than usual in very
          dark rooms. The contents of the screen must still be clearly visible
          in darkness (although they may not be visible in a bright room). -->
-    <integer name="config_screenBrightnessDark">10</integer>
+    <integer name="config_screenBrightnessDark">5</integer>
 
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
