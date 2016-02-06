@@ -15,7 +15,7 @@
 TARGET_KERNEL_CONFIG := aosp_kitakami_karin_defconfig
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
-$(call inherit-product, device/sony/karin/aosp_sgp771_common.mk)
+$(call inherit-product, device/sony/karin_windy/aosp_sgp7xx_common.mk)
 
 # Device Init
 PRODUCT_PACKAGES += \
