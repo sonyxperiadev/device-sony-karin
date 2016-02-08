@@ -32,6 +32,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.karin
 
+# NFC config
+PRODUCT_PACKAGES += \
+    nfc_nci.pn54x.default
+
 PRODUCT_NAME := aosp_sgp771
 PRODUCT_DEVICE := karin
 PRODUCT_MODEL := Xperia Z4 Tablet (AOSP)
