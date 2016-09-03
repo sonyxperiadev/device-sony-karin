@@ -42,6 +42,11 @@ PRODUCT_PACKAGES += \
     InCallUI \
     Stk
 
+# AD7146 - PAD controller
+PRODUCT_PROPERTY_OVERRIDES += \
+    service.pad1.control.start=pad1_on \
+    service.pad2.control.start=pad2_on
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/karin_windy/aosp_sgp7xx_common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
