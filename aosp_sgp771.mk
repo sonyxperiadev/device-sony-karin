@@ -12,8 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Device paths
+COMMON_PATH := device/sony/common
+PLATFORM_COMMON_PATH := device/sony/kitakami
+BOARD_COMMON_PATH := device/sony/karin_windy
+DEVICE_PATH := device/sony/karin
+
 DEVICE_PACKAGE_OVERLAYS += \
-    device/sony/karin/overlay
+    $(DEVICE_PATH)/overlay
 
 # Device Specific Permissions
 PRODUCT_COPY_FILES := \
@@ -48,7 +54,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     service.pad2.control.start=pad2_on
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/sony/karin_windy/aosp_sgp7xx_common.mk)
+$(call inherit-product, $(BOARD_COMMON_PATH)/aosp_sgp7xx_common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 PRODUCT_NAME := aosp_sgp771

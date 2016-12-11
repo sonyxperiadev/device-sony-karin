@@ -12,7 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/karin_windy/BoardConfigCommon.mk
+# Device paths
+COMMON_PATH := device/sony/common
+PLATFORM_COMMON_PATH := device/sony/kitakami
+BOARD_COMMON_PATH := device/sony/karin_windy
+DEVICE_PATH := device/sony/karin
+
+include $(BOARD_COMMON_PATH)/BoardConfigCommon.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := SGP771
 
