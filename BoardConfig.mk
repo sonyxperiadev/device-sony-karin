@@ -17,3 +17,8 @@ include device/sony/karin_windy/BoardConfigCommon.mk
 TARGET_BOOTLOADER_BOARD_NAME := SGP771
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=karin
+
+# Recovery config
+BOARD_SONY_INIT_FLAGS += -DDEV_BLOCK_FOTA_NUM="32"
+BOARD_SONY_INIT_FLAGS += -DDEV_BLOCK_FOTA_MAJOR="259"
+BOARD_SONY_INIT_FLAGS += -DDEV_BLOCK_FOTA_MINOR="0"
