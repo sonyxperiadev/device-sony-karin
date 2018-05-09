@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
     InCallUI \
     Stk
 
+# SAR
+PRODUCT_PACKAGES += \
+    TransPowerAcc
+
 # AD7146 - PAD controller
 PRODUCT_PROPERTY_OVERRIDES += \
     service.pad1.control.start=pad1_on \
